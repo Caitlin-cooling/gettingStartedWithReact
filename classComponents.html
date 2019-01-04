@@ -10,13 +10,30 @@
   <body>
     <div id="app">React has not rendered yet</div>
     <script type="text/babel">
-      class Shapes extends React.Component {
+      class Circle extends React.Component {
         render() {
-          return <h1>Circle, Square, Triangle</h1>
+          return <h1>Circle</h1>
         }
       }
+
+      class Square extends React.Component {
+        render() {
+          return <h1>Square</h1>
+        }
+      }
+
+      class Triangle extends React.Component {
+        render() {
+          return <h1>Triangle</h1>
+        }
+      }
+
       ReactDOM.render(
-      <Shapes/>,
+      <div>
+        <Circle/>
+        <Square/>
+        <Triangle/>
+      </div>,
       document.getElementById("app")
       );
     </script>
