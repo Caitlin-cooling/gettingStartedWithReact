@@ -10,11 +10,23 @@
   <body>
     <div id="app">React has not rendered yet</div>
     <script type="text/babel">
-      var ColorSpectrum = function() {
-        return <h1>Red, Orange, Yellow, Blue, Indigo, Violet</h1>;
+      var Red = function() {
+        return <h1>Red</h1>;
+      }
+      var Blue = function() {
+        return <h1>Blue</h1>;
+      }
+      var Yellow = function() {
+        return <h1>Yellow</h1>;
       }
 
-      ReactDOM.render(<ColorSpectrum/>, document.getElementById("app"));
+      ReactDOM.render(
+      <div>
+        <Red/>
+        <Blue/>
+        <Yellow/>
+      </div>,
+      document.getElementById("app"));
     </script>
   </body>
 </html>
