@@ -15,8 +15,12 @@
   <body>
     <div id="app">React has not rendered yet.</div>
     <script type="text/babel">
+      function Welcome(props) {
+        return <h1>Hello, {props.name}</h1>;
+      }
+      const element = <Welcome name="Caitlin"/>
       ReactDOM.render(
-      <h1>Hello World</h1>,
+      element,
       document.getElementById("app"));
     </script>
   </body>
