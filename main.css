@@ -15,3 +15,22 @@ h1 {
 .yellow {
   background-color: yellow;
 }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+}
