@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <title>FriendLY</title>
+  </head>
+  <body>
+    <h1>Your Profile</h1>
+    <div id="app">React has not rendered yet</div>
+    <script type="text/babel">
+
+      var FriendLY = function() {
+        var friendLYStyle = {
+          textAlign: 'center',
+          height: 250,
+          width: 200,
+          backgroundColor: "#FFF",
+          WebkitFilter: "drop-shadow(0px 0px 5px #555)",
+          filter: "drop-shadow(0px 0px 5px #555)"
+        }
+        return <div style={friendLYStyle}>
+          <Avatar/>
+          <UserName/>
+          <GetConnected/>
+        </div>;
+      }
+
+      var Avatar = function() {
+        var avatarStyle = {
+          margin: 0,
+          fontSize: "9em"
+        }
+        return <h2 style={avatarStyle}>👩‍💻</h2>;
+      }
+
+      var UserName = function() {
+        var userNameStyle = {
+          margin: 0
+        }
+        return <h4 style={userNameStyle}>Caitlin</h4>;
+      }
+
+      var GetConnected = function() {
+        var getConnectedStyle = {
+          fontSize: "1.2em"
+        }
+        return <div style={getConnectedStyle}>
+          <Like/>
+          <Share/>
+          <Add/>
+        </div>
+      }
+
+      var Like = function() {
+        return <i>👍</i>
+      }
+
+      var Share = function() {
+        return <i>👉</i>
+      }
+
+      var Add = function() {
+        return <i>👋</i>
+      }
+
+      ReactDOM.render(
+      <FriendLY/>,
+      document.getElementById("app")
+      )
+    </script>
+  </body>
+</html>
