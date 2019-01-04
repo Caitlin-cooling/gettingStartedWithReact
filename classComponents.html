@@ -6,26 +6,41 @@
     <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
     <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
-    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <div id="app">React has not rendered yet</div>
     <script type="text/babel">
       class Circle extends React.Component {
         render() {
-          return <h1 className='circle'>Circle</h1>
+          var circleStyle = {
+            width: 100,
+            height: 100,
+            backgroundColor: 'red',
+            borderRadius: "50%"
+          }
+          return <h1 style={circleStyle}>Circle</h1>
         }
       }
 
       class Square extends React.Component {
         render() {
-          return <h1 className="square">Square</h1>
+          var squareStyle = {
+            width: 100,
+            height: 100,
+            backgroundColor: 'red'
+          }
+          return <h1 style={squareStyle}>Square</h1>
         }
       }
 
       class Rectangle extends React.Component {
         render() {
-          return <h1 className="rectangle">Rectangle</h1>
+          var rectangleStyle = {
+            width: 200,
+            height: 100,
+            backgroundColor: 'red'
+          }
+          return <h1 style={rectangleStyle}>Rectangle</h1>
         }
       }
 
