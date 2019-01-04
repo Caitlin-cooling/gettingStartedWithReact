@@ -6,19 +6,33 @@
     <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
     <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
-    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <div id="app">React has not rendered yet</div>
     <script type="text/babel">
       var Red = function() {
-        return <h1 className="red">Red</h1>;
+        var redStyle = {
+          height: 50,
+          width: 150,
+          backgroundColor: "red"
+        }
+        return <h1 style={redStyle}>Red</h1>;
       }
       var Blue = function() {
-        return <h1 className="blue">Blue</h1>;
+        var blueStyle = {
+          height: 50,
+          width: 150,
+          backgroundColor: "blue"
+        }
+        return <h1 style={blueStyle}>Blue</h1>;
       }
       var Yellow = function() {
-        return <h1 className="yellow">Yellow</h1>;
+        var yellowStyle = {
+          height: 50,
+          width: 150,
+          backgroundColor: "yellow"
+        }
+        return <h1 style={yellowStyle}>Yellow</h1>;
       }
 
       ReactDOM.render(
